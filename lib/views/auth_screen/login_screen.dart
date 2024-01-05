@@ -1,6 +1,7 @@
 import 'package:e_commerce/consts/consts.dart';
 import 'package:e_commerce/consts/lists.dart';
 import 'package:e_commerce/views/auth_screen/signup_screen.dart';
+import 'package:e_commerce/views/home_screen/home-screen.dart';
 import 'package:e_commerce/widgets/applogo_widget.dart';
 import 'package:e_commerce/widgets/bgWidget.dart';
 import 'package:e_commerce/widgets/button.dart';
@@ -40,13 +41,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: forgetpassword.text.color(Colors.blue).make())),
                 5.heightBox,
                 Button(
-                        color: redColor,
-                        title: login,
-                        textColor: whiteColor,
-                        onPress: () {})
-                    .box
-                    .width(context.screenWidth - 50)
-                    .make(),
+                    color: redColor,
+                    title: login,
+                    textColor: whiteColor,
+                    onPress: () {
+                      Get.to(() => HomeScreen());
+                    }).box.width(context.screenWidth - 50).make(),
                 5.heightBox,
                 createNewAccount.text.color(fontGrey).make(),
                 5.heightBox,

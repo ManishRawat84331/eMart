@@ -47,7 +47,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   children: [
                     Checkbox(
                         activeColor: redColor,
-                        
                         value: ischeck,
                         onChanged: (newValue) {
                           setState(() {
@@ -60,19 +59,23 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           text: TextSpan(children: [
                         TextSpan(
                           text: "I agree to the ",
-                          style: TextStyle(fontFamily: bold, color: fontGrey),
+                          style:
+                              TextStyle(fontFamily: regular, color: fontGrey),
                         ),
                         TextSpan(
                           text: privacyPolicy,
-                          style: TextStyle(fontFamily: bold, color: redColor),
+                          style:
+                              TextStyle(fontFamily: regular, color: redColor),
                         ),
                         TextSpan(
                           text: " & ",
-                          style: TextStyle(fontFamily: bold, color: fontGrey),
+                          style:
+                              TextStyle(fontFamily: regular, color: fontGrey),
                         ),
                         TextSpan(
                           text: termAndCond,
-                          style: TextStyle(fontFamily: bold, color: redColor),
+                          style:
+                              TextStyle(fontFamily: regular, color: redColor),
                         ),
                       ])),
                     )
@@ -80,27 +83,23 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 5.heightBox,
                 Button(
-                        color: redColor,
+                        color: ischeck == true ? redColor : lightGrey,
                         title: signup,
-                        textColor: whiteColor,
+                        textColor:
+                            ischeck == true ? whiteColor : Colors.black45,
                         onPress: () {})
                     .box
                     .width(context.screenWidth - 50)
                     .make(),
                 10.heightBox,
-                GestureDetector(
-                  onTap: () {
-                    Get.back();
-                  },
-                  child: RichText(
-                      text: TextSpan(children: [
-                    TextSpan(
-                        text: alreadyhaveAccount,
-                        style: TextStyle(fontFamily: bold, color: fontGrey)),
-                    TextSpan(
-                        text: login,
-                        style: TextStyle(fontFamily: bold, color: redColor)),
-                  ])),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    alreadyhaveAccount.text.color(fontGrey).make(),
+                    login.text.color(redColor).make().onTap(() {
+                      Get.back();
+                    })
+                  ],
                 )
               ],
             )

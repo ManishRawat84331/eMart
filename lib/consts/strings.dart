@@ -17,3 +17,9 @@ const privacyPolicy = "Privacy Policy";
 const termAndCond = "Terms and Conditions";
 const registerwithPhoneNumber = "or Register With Phone Number ";
 const alreadyhaveAccount = "Already have an account?";
+
+// home navBar strings
+const home = "Home",
+    categories = "Categories",
+    cart = "Cart",
+    account = "Account";
