@@ -23,3 +23,30 @@ const home = "Home",
     categories = "Categories",
     cart = "Cart",
     account = "Account";
+
+// homeScreen strings
+const serachAnyThings = "Search Anything.. ",
+    todayDeal = "Today's Deal",
+    topSeller = "Top Sellers",
+    brand = "Brands",
+    topCategories = "Top Categories",
+    featuredCategories = "Featured Categories",
+    flashSale = "Flash Sale",
+    girlsWatches = "Girls Watches",
+    mobliePhone = "Mobile Phone",
+    boysGlasses = "Boys Glasses",
+    tShirts = "T-Shirts",
+    girlsDress = "Girls Dress",
+    featuredProduct = "Featured Products",
+    womenDress = "Women Dress";
+
+// Categories screen string
+const womenClothing = "Women Clothing",
+    menClothing = "Men Clothing",
+    compAccess = "Computer And Accessories",
+    automoblie = "AutoMobile",
+    kidToys = "Kids & Toys",
+    sports = "Sports",
+    jewellery = "Jewwllery",
+    cellphone = "CellPhone & Tabs",
+    furniture = "Furniture";

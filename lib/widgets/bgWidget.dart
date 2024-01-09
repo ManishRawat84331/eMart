@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:e_commerce/consts/consts.dart';
 
-Widget bgWidget(Widget? child) {
+Widget bgWidget( {Widget? child}) {
   return Container(
     decoration: const BoxDecoration(
         image: DecorationImage(

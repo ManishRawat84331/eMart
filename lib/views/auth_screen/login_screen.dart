@@ -1,7 +1,7 @@
 import 'package:e_commerce/consts/consts.dart';
 import 'package:e_commerce/consts/lists.dart';
 import 'package:e_commerce/views/auth_screen/signup_screen.dart';
-import 'package:e_commerce/views/home_screen/home-screen.dart';
+import 'package:e_commerce/views/home_screen/home.dart';
 import 'package:e_commerce/widgets/applogo_widget.dart';
 import 'package:e_commerce/widgets/bgWidget.dart';
 import 'package:e_commerce/widgets/button.dart';
@@ -20,7 +20,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return bgWidget(Scaffold(
+    return bgWidget(
+      child:Scaffold(
       resizeToAvoidBottomInset: false,
       body: Center(
         child: Column(
@@ -45,7 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     title: login,
                     textColor: whiteColor,
                     onPress: () {
-                      Get.to(() => HomeScreen());
+                      Get.to(() => Home());
                     }).box.width(context.screenWidth - 50).make(),
                 5.heightBox,
                 createNewAccount.text.color(fontGrey).make(),
