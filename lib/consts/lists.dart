@@ -1,5 +1,6 @@
 import 'package:e_commerce/consts/consts.dart';
 import 'package:e_commerce/consts/images.dart';
+import 'package:e_commerce/views/categories_screen/item_details.dart';
 
 const socialList = [
   icFacebookLogo,
@@ -43,4 +44,12 @@ const categoriesImage = [
   imgFc8,
   imgFc9,
   imgFc10,
+];
+
+const itemDetailsList = [
+  video,
+  reviews,
+  privacyPolicy,
+  returnpolicy,
+  supportPolicy
 ];
