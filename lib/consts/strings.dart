@@ -17,6 +17,7 @@ const privacyPolicy = "Privacy Policy";
 const termAndCond = "Terms and Conditions";
 const registerwithPhoneNumber = "or Register With Phone Number ";
 const alreadyhaveAccount = "Already have an account?";
+const logout = "Log out";
 
 // home navBar strings
 const home = "Home",
@@ -58,3 +59,6 @@ const video = "Video",
     sellpolicy = "Seller Policy",
     returnpolicy = "Return Policy",
     supportPolicy = "Support Policy";
+
+//Profile Screen String
+const wishlist = "My Wishlist", orders = "Orders", message = "Message";

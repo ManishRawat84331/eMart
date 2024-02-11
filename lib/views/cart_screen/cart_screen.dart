@@ -1,3 +1,4 @@
+import 'package:e_commerce/consts/consts.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
@@ -5,6 +6,13 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+        color: Colors.white,
+        child: "Cart Empty"
+            .text
+            .size(25)
+            .fontFamily(semibold)
+            .color(darkFontGrey)
+            .makeCentered());
   }
 }
